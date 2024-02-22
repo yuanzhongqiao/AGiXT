@@ -1,118 +1,137 @@
-# AGiXT
-
-[![GitHub](https://img.shields.io/badge/GitHub-Sponsor%20Josh%20XT-blue?logo=github&style=plastic)](https://github.com/sponsors/Josh-XT) [![PayPal](https://img.shields.io/badge/PayPal-Sponsor%20Josh%20XT-blue.svg?logo=paypal&style=plastic)](https://paypal.me/joshxt) [![Ko-Fi](https://img.shields.io/badge/Kofi-Sponsor%20Josh%20XT-blue.svg?logo=kofi&style=plastic)](https://ko-fi.com/joshxt)
-
-[![GitHub](https://img.shields.io/badge/GitHub-AGiXT%20Core-blue?logo=github&style=plastic)](https://github.com/Josh-XT/AGiXT) [![GitHub](https://img.shields.io/badge/GitHub-AGiXT%20Web%20UI-blue?logo=github&style=plastic)](https://github.com/AGiXT/streamlit)
-
-[![GitHub](https://img.shields.io/badge/GitHub-AGiXT%20Python%20SDK-blue?logo=github&style=plastic)](https://github.com/AGiXT/python-sdk) [![pypi](https://img.shields.io/badge/pypi-AGiXT%20Python%20SDK-blue?logo=pypi&style=plastic)](https://pypi.org/project/agixtsdk/)
-
-[![GitHub](https://img.shields.io/badge/GitHub-AGiXT%20TypeScript%20SDK-blue?logo=github&style=plastic)](https://github.com/AGiXT/typescript-sdk) [![npm](https://img.shields.io/badge/npm-AGiXT%20TypeScript%20SDK-blue?logo=npm&style=plastic)](https://www.npmjs.com/package/agixt)
-
-[![Discord](https://img.shields.io/discord/1097720481970397356?label=Discord&logo=discord&logoColor=white&style=plastic&color=5865f2)](https://discord.gg/d3TkHRZcjD)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow_@Josh_XT-blue?logo=twitter&style=plastic)](https://twitter.com/Josh_XT)
-
-[![Logo](https://josh-xt.github.io/AGiXT/images/AGiXT-gradient-flat.svg)](https://josh-xt.github.io/AGiXT/)
-
-AGiXT is a dynamic Artificial Intelligence Automation Platform engineered to orchestrate efficient AI instruction management and task execution across a multitude of providers. Our solution infuses adaptive memory handling with a broad spectrum of commands to enhance AI's understanding and responsiveness, leading to improved task completion. The platform's smart features, like Smart Instruct and Smart Chat, seamlessly integrate web search, planning strategies, and conversation continuity, transforming the interaction between users and AI. By leveraging a powerful plugin system that includes web browsing and command execution, AGiXT stands as a versatile bridge between AI models and users. With an expanding roster of AI providers, code evaluation capabilities, comprehensive chain management, and platform interoperability, AGiXT is consistently evolving to drive a multitude of applications, affirming its place at the forefront of AI technology.
-
-Embracing the spirit of extremity in every facet of life, we introduce AGiXT. This advanced AI Automation Platform is our bold step towards the realization of Artificial General Intelligence (AGI). Seamlessly orchestrating instruction management and executing complex tasks across diverse AI providers, AGiXT combines adaptive memory, smart features, and a versatile plugin system to maximize AI potential. With our unwavering commitment to innovation, we're dedicated to pushing the boundaries of AI and bringing AGI closer to reality.
-
-[AGiXT Setup and Usage Video](https://www.youtube.com/watch?v=XbjjPdYRM_k)
-
-## Table of Contents 📖
-
-- [AGiXT](#agixt)
-  - [Table of Contents 📖](#table-of-contents-)
-  - [⚠️ Disclaimers](#️-disclaimers)
-    - [Monitor Your Usage](#monitor-your-usage)
-  - [Key Features 🗝️](#key-features-️)
-    - [Getting Started with Local Models and AGiXT Video](#getting-started-with-local-models-and-agixt-video)
-  - [Quick Start Guide](#quick-start-guide)
-    - [Windows and Mac Prerequisites](#windows-and-mac-prerequisites)
-    - [Linux Prerequisites](#linux-prerequisites)
-    - [Download and Install](#download-and-install)
-    - [Running and Updating AGiXT](#running-and-updating-agixt)
-  - [Configuration](#configuration)
-  - [Documentation](#documentation)
-  - [Other Repositories](#other-repositories)
-  - [Contributing](#contributing)
-  - [Donations and Sponsorships](#donations-and-sponsorships)
-  - [Our Team 🧑‍💻](#our-team-)
-    - [Josh (@Josh-XT)](#josh-josh-xt)
-    - [James (@JamesonRGrieve)](#james-jamesonrgrieve)
-  - [History](#history)
-
-## ⚠️ Disclaimers
-
-### Monitor Your Usage
-
-Please note that using some AI providers (such as OpenAI's GPT-4 API) can be expensive! Monitor your usage carefully to avoid incurring unexpected costs.  We're **NOT** responsible for your usage under any circumstances.
-
-## Key Features 🗝️
-
-- **Context and Token Management**: Adaptive handling of long-term and short-term memory for an optimized AI performance, allowing the software to process information more efficiently and accurately.
-- **Smart Instruct**: An advanced feature enabling AI to comprehend, plan, and execute tasks effectively. The system leverages web search, planning strategies, and executes instructions while ensuring output accuracy.
-- **Interactive Chat & Smart Chat**: User-friendly chat interface for dynamic conversational tasks. The Smart Chat feature integrates AI with web research to deliver accurate and contextually relevant responses.
-- **Task Execution & Smart Task Management**: Efficient management and execution of complex tasks broken down into sub-tasks. The Smart Task feature employs AI-driven agents to dynamically handle tasks, optimizing efficiency and avoiding redundancy.
-- **Chain Management**: Sophisticated handling of chains or a series of linked commands, enabling the automation of complex workflows and processes.
-- **Web Browsing & Command Execution**: Advanced capabilities to browse the web and execute commands for a more interactive AI experience, opening a wide range of possibilities for AI assistance.
-- **Multi-Provider Compatibility**: Seamless integration with leading AI providers such as OpenAI GPT series, Hugging Face Huggingchat, GPT4All, GPT4Free, Oobabooga Text Generation Web UI, Kobold, llama.cpp, FastChat, Google Bard, Bing, and more.
-- **Versatile Plugin System & Code Evaluation**: Extensible command support for various AI models along with robust support for code evaluation, providing assistance in programming tasks.
-- **Docker Deployment**: Simplified setup and maintenance through Docker deployment.
-- **Audio-to-Text & Text-to-Speech Options**: Integration with Hugging Face for seamless audio-to-text transcription, and multiple TTS choices, featuring Brian TTS, Mac OS TTS, and ElevenLabs.
-- **Platform Interoperability & AI Agent Management**: Streamlined creation, renaming, deletion, and updating of AI agent settings along with easy interaction with popular platforms like Twitter, GitHub, Google, DALL-E, and more.
-- **Custom Prompts & Command Control**: Granular control over agent abilities through enabling or disabling specific commands, and easy creation, editing, and deletion of custom prompts to standardize user inputs.
-- **RESTful API**: FastAPI-powered RESTful API for seamless integration with external applications and services.
-- **Expanding AI Support**: Continually updated to include new AI providers and services, ensuring the software stays at the forefront of AI technology.
-
-### Getting Started with Local Models and AGiXT Video
-
-This is a video that walks through the process of setting up and using AGiXT to interact with locally hosted language models. This is a great way to get started with AGiXT and see how it works.
-
-[![Getting Started with Local Models and AGiXT](https://img.youtube.com/vi/XbjjPdYRM_k/0.jpg)](https://www.youtube.com/watch?v=XbjjPdYRM_k)
-
-## Quick Start Guide
-
-### Windows and Mac Prerequisites
-
-- [Git](https://git-scm.com/downloads)
-- [Docker Desktop](https://docs.docker.com/docker-for-windows/install/)
-- [PowerShell 7.X](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.4)
-
-### Linux Prerequisites
-
-- [Git](https://git-scm.com/downloads)
-- [Docker](https://docs.docker.com/get-docker/)
-- [Docker Compose](https://docs.docker.com/compose/install/)
-- [PowerShell 7.X](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.4) (Optional if you want to use the launcher script, but not required)
-- [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) (if using local models on GPU)
-
-### Download and Install
-
-Open a PowerShell terminal and run the following to download and install AGiXT:
-
-Windows and Mac:
-
-```bash
-git clone https://github.com/Josh-XT/AGiXT
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><h1 tabindex="-1" dir="auto"><a id="user-content-agixt" class="anchor" aria-hidden="true" tabindex="-1" href="#agixt"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AGiXT</font></font></h1>
+<p dir="auto"><a href="https://github.com/sponsors/Josh-XT"><img src="https://camo.githubusercontent.com/8e514b8548f289ec6b7c75409ca7bc54cccc4d218ee20bcf474cf3b9e2d47793/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d53706f6e736f722532304a6f736825323058542d626c75653f6c6f676f3d676974687562267374796c653d706c6173746963" alt="GitHub" data-canonical-src="https://img.shields.io/badge/GitHub-Sponsor%20Josh%20XT-blue?logo=github&amp;style=plastic" style="max-width: 100%;"></a> <a href="https://paypal.me/joshxt" rel="nofollow"><img src="https://camo.githubusercontent.com/8eb6ec9899aaafd29874322abb2cee3bbdcb82153f68932c28c0b364783f541b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d53706f6e736f722532304a6f736825323058542d626c75652e7376673f6c6f676f3d70617970616c267374796c653d706c6173746963" alt="贝宝" data-canonical-src="https://img.shields.io/badge/PayPal-Sponsor%20Josh%20XT-blue.svg?logo=paypal&amp;style=plastic" style="max-width: 100%;"></a> <a href="https://ko-fi.com/joshxt" rel="nofollow"><img src="https://camo.githubusercontent.com/5df4a9c2f5d26561eef7551b70e778871a827f6fdfc11dd62b4e7344b1e0b94e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4b6f66692d53706f6e736f722532304a6f736825323058542d626c75652e7376673f6c6f676f3d6b6f6669267374796c653d706c6173746963" alt="科菲" data-canonical-src="https://img.shields.io/badge/Kofi-Sponsor%20Josh%20XT-blue.svg?logo=kofi&amp;style=plastic" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://github.com/Josh-XT/AGiXT"><img src="https://camo.githubusercontent.com/80190bd0c79cd69f710bb2efafbd87effe7eb98c77b303f3be808a304ab713e1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d4147695854253230436f72652d626c75653f6c6f676f3d676974687562267374796c653d706c6173746963" alt="GitHub" data-canonical-src="https://img.shields.io/badge/GitHub-AGiXT%20Core-blue?logo=github&amp;style=plastic" style="max-width: 100%;"></a> <a href="https://github.com/AGiXT/streamlit"><img src="https://camo.githubusercontent.com/efbda7c83fc3c447a1ddcb10054144822927b982f135cfdbc66aff36cfe1f7b1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d414769585425323057656225323055492d626c75653f6c6f676f3d676974687562267374796c653d706c6173746963" alt="GitHub" data-canonical-src="https://img.shields.io/badge/GitHub-AGiXT%20Web%20UI-blue?logo=github&amp;style=plastic" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://github.com/AGiXT/python-sdk"><img src="https://camo.githubusercontent.com/3b447b7619adae7945cc3524fb2bf2e0219215234a67dd3f8a5d4a67245aaade/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d4147695854253230507974686f6e25323053444b2d626c75653f6c6f676f3d676974687562267374796c653d706c6173746963" alt="GitHub" data-canonical-src="https://img.shields.io/badge/GitHub-AGiXT%20Python%20SDK-blue?logo=github&amp;style=plastic" style="max-width: 100%;"></a> <a href="https://pypi.org/project/agixtsdk/" rel="nofollow"><img src="https://camo.githubusercontent.com/ef78d3158aa6877ed75b6ab2319bcc1f4e04da73976d2b8911fbdd0d1a7b99d4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f707970692d4147695854253230507974686f6e25323053444b2d626c75653f6c6f676f3d70797069267374796c653d706c6173746963" alt="皮皮" data-canonical-src="https://img.shields.io/badge/pypi-AGiXT%20Python%20SDK-blue?logo=pypi&amp;style=plastic" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://github.com/AGiXT/typescript-sdk"><img src="https://camo.githubusercontent.com/3cbba2c757428e1dc192f5e55dbcc6da25d605e20f8b87566718b6d52cad4803/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d41476958542532305479706553637269707425323053444b2d626c75653f6c6f676f3d676974687562267374796c653d706c6173746963" alt="GitHub" data-canonical-src="https://img.shields.io/badge/GitHub-AGiXT%20TypeScript%20SDK-blue?logo=github&amp;style=plastic" style="max-width: 100%;"></a> <a href="https://www.npmjs.com/package/agixt" rel="nofollow"><img src="https://camo.githubusercontent.com/dad5813f40ac787f2aacbf2fb23d82aed65e21177329ba7ead0e0c1e5bc8ab34/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6e706d2d41476958542532305479706553637269707425323053444b2d626c75653f6c6f676f3d6e706d267374796c653d706c6173746963" alt="新项目管理" data-canonical-src="https://img.shields.io/badge/npm-AGiXT%20TypeScript%20SDK-blue?logo=npm&amp;style=plastic" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://discord.gg/d3TkHRZcjD" rel="nofollow"><img src="https://camo.githubusercontent.com/d49e2e63369101c2dc5dce44f83eee3989217084977957344f99777858533b3f/68747470733a2f2f696d672e736869656c64732e696f2f646973636f72642f313039373732303438313937303339373335363f6c6162656c3d446973636f7264266c6f676f3d646973636f7264266c6f676f436f6c6f723d7768697465267374796c653d706c617374696326636f6c6f723d353836356632" alt="不和谐" data-canonical-src="https://img.shields.io/discord/1097720481970397356?label=Discord&amp;logo=discord&amp;logoColor=white&amp;style=plastic&amp;color=5865f2" style="max-width: 100%;"></a>
+<a href="https://twitter.com/Josh_XT" rel="nofollow"><img src="https://camo.githubusercontent.com/7007eddce0c2e4c65925de9e08d2764b896d9f180041d0565f9c3417cdea1a8a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f547769747465722d466f6c6c6f775f404a6f73685f58542d626c75653f6c6f676f3d74776974746572267374796c653d706c6173746963" alt="推特" data-canonical-src="https://img.shields.io/badge/Twitter-Follow_@Josh_XT-blue?logo=twitter&amp;style=plastic" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://josh-xt.github.io/AGiXT/" rel="nofollow"><img src="https://camo.githubusercontent.com/a722c36484d1b9e117dc31cbf450e1bc5148fd2ca930a10598faa9818fa74402/68747470733a2f2f6a6f73682d78742e6769746875622e696f2f41476958542f696d616765732f41476958542d6772616469656e742d666c61742e737667" alt="标识" data-canonical-src="https://josh-xt.github.io/AGiXT/images/AGiXT-gradient-flat.svg" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AGiXT 是一个动态人工智能自动化平台，旨在跨众多提供商协调高效的人工智能指令管理和任务执行。</font><font style="vertical-align: inherit;">我们的解决方案将自适应内存处理与广泛的命令相结合，以增强人工智能的理解和响应能力，从而提高任务完成率。</font><font style="vertical-align: inherit;">该平台的智能功能，如智能指导和智能聊天，无缝集成网络搜索、规划策略和对话连续性，改变用户与人工智能之间的交互。</font><font style="vertical-align: inherit;">通过利用包括网页浏览和命令执行在内的强大插件系统，AGiXT 成为人工智能模型和用户之间的多功能桥梁。</font><font style="vertical-align: inherit;">凭借不断扩大的人工智能提供商名单、代码评估能力、全面的链管理和平台互操作性，AGiXT 不断发展以驱动多种应用程序，巩固了其在人工智能技术前沿的地位。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们将极限精神融入生活的方方面面，推出 AGiXT。</font><font style="vertical-align: inherit;">这个先进的人工智能自动化平台是我们朝着实现通用人工智能（AGI）迈出的大胆一步。</font><font style="vertical-align: inherit;">AGiXT 能够跨不同 AI 提供商无缝编排指令管理并执行复杂任务，结合了自适应内存、智能功能和多功能插件系统，以最大限度地发挥 AI 潜力。</font><font style="vertical-align: inherit;">凭借对创新的坚定承诺，我们致力于突破人工智能的界限，让通用人工智能更接近现实。</font></font></p>
+<p dir="auto"><a href="https://www.youtube.com/watch?v=XbjjPdYRM_k" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AGiXT 设置和使用视频</font></font></a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-table-of-contents-" class="anchor" aria-hidden="true" tabindex="-1" href="#table-of-contents-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录📖</font></font></h2>
+<ul dir="auto">
+<li><a href="#agixt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AGiXT</font></font></a>
+<ul dir="auto">
+<li><a href="#table-of-contents-"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录📖</font></font></a></li>
+<li><a href="#%EF%B8%8F-disclaimers"><g-emoji class="g-emoji" alias="warning"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⚠️</font></font></g-emoji><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">免责声明</font></font></a>
+<ul dir="auto">
+<li><a href="#monitor-your-usage"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">监控您的使用情况</font></font></a></li>
+</ul>
+</li>
+<li><a href="#key-features-%EF%B8%8F"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主要特点🗝️</font></font></a>
+<ul dir="auto">
+<li><a href="#getting-started-with-local-models-and-agixt-video"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本地模型和 AGiXT 视频入门</font></font></a></li>
+</ul>
+</li>
+<li><a href="#quick-start-guide"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速入门指南</font></font></a>
+<ul dir="auto">
+<li><a href="#windows-and-mac-prerequisites"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Windows 和 Mac 先决条件</font></font></a></li>
+<li><a href="#linux-prerequisites"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linux 先决条件</font></font></a></li>
+<li><a href="#download-and-install"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载并安装</font></font></a></li>
+<li><a href="#running-and-updating-agixt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行和更新 AGiXT</font></font></a></li>
+</ul>
+</li>
+<li><a href="#configuration"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></a></li>
+<li><a href="#documentation"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a></li>
+<li><a href="#other-repositories"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他存储库</font></font></a></li>
+<li><a href="#contributing"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></a></li>
+<li><a href="#donations-and-sponsorships"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">捐赠和赞助</font></font></a></li>
+<li><a href="#our-team-"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的团队🧑&zwj;💻</font></font></a>
+<ul dir="auto">
+<li><a href="#josh-josh-xt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">乔什（@Josh-XT）</font></font></a></li>
+<li><a href="#james-jamesonrgrieve"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">詹姆斯（@JamesonRGrieve）</font></font></a></li>
+</ul>
+</li>
+<li><a href="#history"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">历史</font></font></a></li>
+</ul>
+</li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-️-disclaimers" class="anchor" aria-hidden="true" tabindex="-1" href="#️-disclaimers"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><g-emoji class="g-emoji" alias="warning"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⚠️</font></font></g-emoji><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">免责声明</font></font></h2>
+<h3 tabindex="-1" dir="auto"><a id="user-content-monitor-your-usage" class="anchor" aria-hidden="true" tabindex="-1" href="#monitor-your-usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">监控您的使用情况</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请注意，使用某些 AI 提供商（例如 OpenAI 的 GPT-4 API）可能会很昂贵！</font><font style="vertical-align: inherit;">仔细监控您的使用情况，以避免产生意外费用。</font><font style="vertical-align: inherit;">在任何情况下，我们</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">都不</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对您的使用负责。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-key-features-️" class="anchor" aria-hidden="true" tabindex="-1" href="#key-features-️"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主要特点🗝️</font></font></h2>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上下文和令牌管理</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：自适应处理长期和短期记忆，以优化人工智能性能，使软件能够更有效、更准确地处理信息。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">智能指导</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：一项高级功能，使人工智能能够有效地理解、计划和执行任务。</font><font style="vertical-align: inherit;">该系统利用网络搜索、规划策略并执行指令，同时确保输出准确性。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">交互式聊天和智能聊天</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：用户友好的聊天界面，用于动态对话任务。</font><font style="vertical-align: inherit;">智能聊天功能将人工智能与网络研究相结合，以提供准确且与上下文相关的响应。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">任务执行和智能任务管理</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：有效管理和执行分解为子任务的复杂任务。</font><font style="vertical-align: inherit;">智能任务功能采用人工智能驱动的代理来动态处理任务，优化效率并避免冗余。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">链管理</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：对链或一系列链接命令的复杂处理，实现复杂工作流程和流程的自动化。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网页浏览和命令执行</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：浏览网页和执行命令的高级功能，以获得更具交互性的人工智能体验，为人工智能辅助提供了广泛的可能性。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多提供商兼容性</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：与领先的人工智能提供商无缝集成，例如 OpenAI GPT 系列、Hugging Face Huggingchat、GPT4All、GPT4Free、Oobabooga 文本生成 Web UI、Kobold、llama.cpp、FastChat、Google Bard、Bing 等。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多功能插件系统和代码评估</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：对各种人工智能模型的可扩展命令支持以及对代码评估的强大支持，为编程任务提供帮助。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker 部署</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：通过 Docker 部署简化设置和维护。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">音频转文本和文本转语音选项</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：与 Hugging Face 集成，实现无缝音频转文本转录，以及多种 TTS 选择，包括 Brian TTS、Mac OS TTS 和 ElevenLabs。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">平台互操作性和 AI 代理管理</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：简化 AI 代理设置的创建、重命名、删除和更新，并与 Twitter、GitHub、Google、DALL-E 等流行平台轻松交互。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自定义提示和命令控制</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：通过启用或禁用特定命令，以及轻松创建、编辑和删除自定义提示来标准化用户输入，对代理能力进行精细控制。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RESTful API</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：FastAPI 支持的 RESTful API，可与外部应用程序和服务无缝集成。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩大人工智能支持</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：不断更新以纳入新的人工智能提供商和服务，确保软件始终处于人工智能技术的前沿。</font></font></li>
+</ul>
+<h3 tabindex="-1" dir="auto"><a id="user-content-getting-started-with-local-models-and-agixt-video" class="anchor" aria-hidden="true" tabindex="-1" href="#getting-started-with-local-models-and-agixt-video"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本地模型和 AGiXT 视频入门</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该视频介绍了设置和使用 AGiXT 与本地托管语言模型交互的过程。</font><font style="vertical-align: inherit;">这是开始使用 AGiXT 并了解其工作原理的好方法。</font></font></p>
+<p dir="auto"><a href="https://www.youtube.com/watch?v=XbjjPdYRM_k" rel="nofollow"><img src="https://camo.githubusercontent.com/96c0b249877a7b969003c9a987f98633833689da6ca6e6c6b462987240891344/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f58626a6a506459524d5f6b2f302e6a7067" alt="本地模型和 AGiXT 入门" data-canonical-src="https://img.youtube.com/vi/XbjjPdYRM_k/0.jpg" style="max-width: 100%;"></a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-quick-start-guide" class="anchor" aria-hidden="true" tabindex="-1" href="#quick-start-guide"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速入门指南</font></font></h2>
+<h3 tabindex="-1" dir="auto"><a id="user-content-windows-and-mac-prerequisites" class="anchor" aria-hidden="true" tabindex="-1" href="#windows-and-mac-prerequisites"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Windows 和 Mac 先决条件</font></font></h3>
+<ul dir="auto">
+<li><a href="https://git-scm.com/downloads" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">git</font></font></a></li>
+<li><a href="https://docs.docker.com/docker-for-windows/install/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker 桌面</font></font></a></li>
+<li><a href="https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.4" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PowerShell 7.X</font></font></a></li>
+</ul>
+<h3 tabindex="-1" dir="auto"><a id="user-content-linux-prerequisites" class="anchor" aria-hidden="true" tabindex="-1" href="#linux-prerequisites"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linux 先决条件</font></font></h3>
+<ul dir="auto">
+<li><a href="https://git-scm.com/downloads" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">git</font></font></a></li>
+<li><a href="https://docs.docker.com/get-docker/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">码头工人</font></font></a></li>
+<li><a href="https://docs.docker.com/compose/install/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker 组合</font></font></a></li>
+<li><a href="https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.4" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PowerShell 7.X</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（如果您想使用启动器脚本，则可选，但不是必需的）</font></font></li>
+<li><a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NVIDIA 容器工具包</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（如果在 GPU 上使用本地模型）</font></font></li>
+</ul>
+<h3 tabindex="-1" dir="auto"><a id="user-content-download-and-install" class="anchor" aria-hidden="true" tabindex="-1" href="#download-and-install"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载并安装</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打开 PowerShell 终端并运行以下命令来下载并安装 AGiXT：</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Windows 和 Mac：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>git clone https://github.com/Josh-XT/AGiXT
+<span class="pl-c1">cd</span> AGiXT
+./AGiXT.ps1</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="git clone https://github.com/Josh-XT/AGiXT
 cd AGiXT
-./AGiXT.ps1
-```
-
-Linux:
-
-```bash
-git clone https://github.com/Josh-XT/AGiXT
+./AGiXT.ps1" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linux：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>git clone https://github.com/Josh-XT/AGiXT
+<span class="pl-c1">cd</span> AGiXT
+sudo pwsh ./AGiXT.ps1</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="git clone https://github.com/Josh-XT/AGiXT
 cd AGiXT
-sudo pwsh ./AGiXT.ps1
-```
+sudo pwsh ./AGiXT.ps1" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><code>AGiXT.ps1</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当您第一次</font><font style="vertical-align: inherit;">运行该脚本时，它会</font></font><code>.env</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自动创建一个文件。</font><font style="vertical-align: inherit;">首次运行时会询问一些问题来帮助您入门。</font><font style="vertical-align: inherit;">建议大多数用户使用默认选项。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于高级环境变量设置，请参阅</font></font><a href="https://josh-xt.github.io/AGiXT/1-Getting%20started/1-Environment%20Variables.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">环境变量设置</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档以获取设置指南。</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>    ___   _______ _  ________
+   /   <span class="pl-k">|</span> / ____(_) <span class="pl-k">|</span>/ /_  __/
+  / /<span class="pl-k">|</span> <span class="pl-k">|</span>/ / __/ /<span class="pl-k">|</span>   / / /
+ / ___ / /_/ / //   <span class="pl-k">|</span> / /
+/_/  <span class="pl-k">|</span>_<span class="pl-cce">\_</span>___/_//_/<span class="pl-k">|</span>_<span class="pl-k">|</span>/_/
 
-When you run the `AGiXT.ps1` script for the first time, it will create a `.env` file automatically. There are a few questions asked on first run to help you get started. The default options are recommended for most users.
-
-For advanced environment variable setup, see the [Environment Variable Setup](https://josh-xt.github.io/AGiXT/1-Getting%20started/1-Environment%20Variables.html) documentation for guidance on setup.
-
-```bash
-    ___   _______ _  ________
+-------------------------------
+Visit our documentation at https://AGiXT.com
+Welcome to the AGiXT Environment Setup<span class="pl-k">!</span>
+Would you like AGiXT to auto update<span class="pl-k">?</span> (y/n - default: y):
+Would you like to <span class="pl-c1">set</span> an API Key <span class="pl-k">for</span> AGiXT<span class="pl-k">?</span> Enter it <span class="pl-k">if</span> so, otherwise press enter to proceed. (default is blank):
+Enter the number of AGiXT workers to run (default: 10):</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="    ___   _______ _  ________
    /   | / ____(_) |/ /_  __/
   / /| |/ / __/ /|   / / /
  / ___ / /_/ / //   | / /
@@ -123,70 +142,76 @@ Visit our documentation at https://AGiXT.com
 Welcome to the AGiXT Environment Setup!
 Would you like AGiXT to auto update? (y/n - default: y):
 Would you like to set an API Key for AGiXT? Enter it if so, otherwise press enter to proceed. (default is blank):
-Enter the number of AGiXT workers to run (default: 10):
-```
-
-After the environment setup is complete, you will have the following options:
-
-```bash
-1. Run AGiXT (Stable - Recommended!)
+Enter the number of AGiXT workers to run (default: 10):" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">环境设置完成后，您将有以下选项：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>1. Run AGiXT (Stable - Recommended<span class="pl-k">!</span>)
 2. Run AGiXT (Development)
 3. Run Backend Only (Development)
 4. Exit
-Enter your choice: 
-```
-
-Choose Option 1 to run AGiXT with the latest stable release. This is the recommended option for most users. If you're not actively developing AGiXT, this is the option you should choose.
-
-### Running and Updating AGiXT
-
-Any time you want to run or update AGiXT, run the following commands from your `AGiXT` directory:
-
-```bash
-./AGiXT.ps1
-```
-
-- Access the web interface at <http://localhost:8501>
-- Access the AGiXT API documentation at <http://localhost:7437>
-
-## Configuration
-
-Each AGiXT Agent has its own settings for interfacing with AI providers, and other configuration options. These settings can be set and modified through the web interface.
-
-## Documentation
-
-Need more information? Check out the [documentation](https://josh-xt.github.io/AGiXT) for more details to get a better understanding of the concepts and features of AGiXT.
-
-## Other Repositories
-
-Check out the other AGiXT repositories at <https://github.com/orgs/AGiXT/repositories> - these include the AGiXT Streamlit Web UI, AGiXT Python SDK, AGiXT TypeScript SDK, and more!
-
-## Contributing
-
-[![Contribute](https://img.shields.io/github/issues/Josh-XT/AGiXT/help%20wanted?color=purple&label=Quick%20Contribute&logo=github&style=plastic)](https://github.com/Josh-XT/AGiXT/labels/help%20wanted)
-
-We welcome contributions to AGiXT! If you're interested in contributing, please check out our [contributions guide](https://github.com/Josh-XT/AGiXT/tree/main/.github/CONTRIBUTING.md) the [open issues on the backend](https://github.com/Josh-XT/AGiXT/issues), [open issues on the frontend](https://github.com/JamesonRGrieve/Agent-LLM-Frontend/issues) and [pull requests](https://github.com/Josh-XT/AGiXT/pulls), submit a [pull request](https://github.com/Josh-XT/AGiXT/pulls/new), or [suggest new features](https://github.com/Josh-XT/AGiXT/issues/new). To stay updated on the project's progress, [![Twitter](https://img.shields.io/badge/Twitter-Follow_@Josh_XT-blue?logo=twitter&style=plastic)](https://twitter.com/Josh_XT) and [![Twitter](https://img.shields.io/badge/Twitter-Follow_@JamesonRGrieve-blue?logo=twitter&style=plastic)](https://twitter.com/JamesonRGrieve). Also feel free to join our [![Discord](https://img.shields.io/discord/1097720481970397356?label=Discord&logo=discord&logoColor=white&style=plastic&color=5865f2)](https://discord.gg/d3TkHRZcjD).
-
-## Donations and Sponsorships
-
-We appreciate any support for AGiXT's development, including donations, sponsorships, and any other kind of assistance. If you would like to support us, please use one of the various methods listed at the top of the repository or contact us through our [![Discord](https://img.shields.io/discord/1097720481970397356?label=Discord&logo=discord&logoColor=white&style=plastic&color=5865f2)](https://discord.gg/d3TkHRZcjD) or [![Twitter](https://img.shields.io/badge/Twitter-Follow_@Josh_XT-blue?logo=twitter&style=plastic)](https://twitter.com/Josh_XT).
-
-We're always looking for ways to improve AGiXT and make it more useful for our users. Your support will help us continue to develop and enhance the application. Thank you for considering to support us!
-
-## Our Team 🧑‍💻
-
-### Josh (@Josh-XT)
-
-- [![GitHub](https://img.shields.io/badge/GitHub-Follow_@Josh--XT-white?logo=github&style=plastic)](https://github.com/Josh-XT)
-- [![Twitter](https://img.shields.io/badge/Twitter-Follow_@Josh__XT-blue?logo=twitter&style=plastic)](https://twitter.com/Josh_XT)
-- [![LinkedIn](https://img.shields.io/badge/LinkedIn-Follow_@JoshXT-blue?logo=linkedin&style=plastic)](https://www.linkedin.com/in/joshxt/)
-
-### James (@JamesonRGrieve)
-
-- [![GitHub](https://img.shields.io/badge/GitHub-Follow_@JamesonRGrieve-white?logo=github&style=plastic)](https://github.com/JamesonRGrieve)
-- [![Twitter](https://img.shields.io/badge/Twitter-Follow_@JamesonRGrieve-blue?logo=twitter&style=plastic)](https://twitter.com/JamesonRGrieve)
-- [![LinkedIn](https://img.shields.io/badge/LinkedIn-Follow_@JamesonRGrieve-blue?logo=linkedin&style=plastic)](https://www.linkedin.com/in/jamesonrgrieve/)
-
-## History
-
-![Star History Chart](https://api.star-history.com/svg?repos=Josh-XT/AGiXT&type=Dat)
+Enter your choice: </pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="1. Run AGiXT (Stable - Recommended!)
+2. Run AGiXT (Development)
+3. Run Backend Only (Development)
+4. Exit
+Enter your choice: " tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选择选项 1 以运行具有最新稳定版本的 AGiXT。</font><font style="vertical-align: inherit;">这是大多数用户推荐的选项。</font><font style="vertical-align: inherit;">如果您没有积极开发 AGiXT，那么您应该选择此选项。</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-running-and-updating-agixt" class="anchor" aria-hidden="true" tabindex="-1" href="#running-and-updating-agixt"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行和更新 AGiXT</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"></font><code>AGiXT</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">任何时候您想要运行或更新 AGiXT，请从您的目录</font><font style="vertical-align: inherit;">运行以下命令：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>./AGiXT.ps1</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="./AGiXT.ps1" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">访问Web界面：</font></font><a href="http://localhost:8501" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost:8501</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">访问 AGiXT API 文档</font></font><a href="http://localhost:7437" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：http://localhost:7437</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-configuration" class="anchor" aria-hidden="true" tabindex="-1" href="#configuration"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每个 AGiXT 代理都有自己的与 AI 提供商交互的设置以及其他配置选项。</font><font style="vertical-align: inherit;">这些设置可以通过 Web 界面进行设置和修改。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-documentation" class="anchor" aria-hidden="true" tabindex="-1" href="#documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">需要更多信息吗？</font><font style="vertical-align: inherit;">查看</font></font><a href="https://josh-xt.github.io/AGiXT" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解更多详细信息，以便更好地了解 AGiXT 的概念和功能。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-other-repositories" class="anchor" aria-hidden="true" tabindex="-1" href="#other-repositories"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他存储库</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看其他 AGiXT 存储库：</font></font><a href="https://github.com/orgs/AGiXT/repositories"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://github.com/orgs/AGiXT/repositories</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - 其中包括 AGiXT Streamlit Web UI、AGiXT Python SDK、AGiXT TypeScript SDK 等等！</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-contributing" class="anchor" aria-hidden="true" tabindex="-1" href="#contributing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></h2>
+<p dir="auto"><a href="https://github.com/Josh-XT/AGiXT/labels/help%20wanted"><img src="https://camo.githubusercontent.com/1ac82bccb6c5929d38111fbe7935d672fbe0c6404bd285ecc40961a821e4f3ec/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f4a6f73682d58542f41476958542f68656c7025323077616e7465643f636f6c6f723d707572706c65266c6162656c3d517569636b253230436f6e74726962757465266c6f676f3d676974687562267374796c653d706c6173746963" alt="贡献" data-canonical-src="https://img.shields.io/github/issues/Josh-XT/AGiXT/help%20wanted?color=purple&amp;label=Quick%20Contribute&amp;logo=github&amp;style=plastic" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们欢迎为 AGiXT 做出贡献！</font><font style="vertical-align: inherit;">如果您有兴趣做出贡献，请查看我们的</font></font><a href="https://github.com/Josh-XT/AGiXT/tree/main/.github/CONTRIBUTING.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献指南</font></font></a><font style="vertical-align: inherit;"></font><a href="https://github.com/Josh-XT/AGiXT/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">后端的未解决问题</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font><font style="vertical-align: inherit;">前端</font></font><a href="https://github.com/JamesonRGrieve/Agent-LLM-Frontend/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的未解决问题</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://github.com/Josh-XT/AGiXT/pulls"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">拉取请求</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、提交</font></font><a href="https://github.com/Josh-XT/AGiXT/pulls/new"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">拉取请求</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><a href="https://github.com/Josh-XT/AGiXT/issues/new"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建议新功能</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">及时了解项目进展情况，</font></font><a href="https://twitter.com/Josh_XT" rel="nofollow"><img src="https://camo.githubusercontent.com/7007eddce0c2e4c65925de9e08d2764b896d9f180041d0565f9c3417cdea1a8a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f547769747465722d466f6c6c6f775f404a6f73685f58542d626c75653f6c6f676f3d74776974746572267374796c653d706c6173746963" alt="推特" data-canonical-src="https://img.shields.io/badge/Twitter-Follow_@Josh_XT-blue?logo=twitter&amp;style=plastic" style="max-width: 100%;"></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以及</font></font><a href="https://twitter.com/JamesonRGrieve" rel="nofollow"><img src="https://camo.githubusercontent.com/a715430c0d97ef41143a3f818cbf3f1b0f677fc5eae4ebdc2e4a457d75028e94/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f547769747465722d466f6c6c6f775f404a616d65736f6e524772696576652d626c75653f6c6f676f3d74776974746572267374796c653d706c6173746963" alt="推特" data-canonical-src="https://img.shields.io/badge/Twitter-Follow_@JamesonRGrieve-blue?logo=twitter&amp;style=plastic" style="max-width: 100%;"></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">也欢迎加入我们的</font></font><a href="https://discord.gg/d3TkHRZcjD" rel="nofollow"><img src="https://camo.githubusercontent.com/d49e2e63369101c2dc5dce44f83eee3989217084977957344f99777858533b3f/68747470733a2f2f696d672e736869656c64732e696f2f646973636f72642f313039373732303438313937303339373335363f6c6162656c3d446973636f7264266c6f676f3d646973636f7264266c6f676f436f6c6f723d7768697465267374796c653d706c617374696326636f6c6f723d353836356632" alt="不和谐" data-canonical-src="https://img.shields.io/discord/1097720481970397356?label=Discord&amp;logo=discord&amp;logoColor=white&amp;style=plastic&amp;color=5865f2" style="max-width: 100%;"></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-donations-and-sponsorships" class="anchor" aria-hidden="true" tabindex="-1" href="#donations-and-sponsorships"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">捐赠和赞助</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们感谢对 AGiXT 发展的任何支持，包括捐赠、赞助和任何其他类型的援助。</font><font style="vertical-align: inherit;">如果您想支持我们，请使用存储库顶部列出的各种方法之一，或通过我们的</font></font><a href="https://discord.gg/d3TkHRZcjD" rel="nofollow"><img src="https://camo.githubusercontent.com/d49e2e63369101c2dc5dce44f83eee3989217084977957344f99777858533b3f/68747470733a2f2f696d672e736869656c64732e696f2f646973636f72642f313039373732303438313937303339373335363f6c6162656c3d446973636f7264266c6f676f3d646973636f7264266c6f676f436f6c6f723d7768697465267374796c653d706c617374696326636f6c6f723d353836356632" alt="不和谐" data-canonical-src="https://img.shields.io/discord/1097720481970397356?label=Discord&amp;logo=discord&amp;logoColor=white&amp;style=plastic&amp;color=5865f2" style="max-width: 100%;"></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或与我们联系</font></font><a href="https://twitter.com/Josh_XT" rel="nofollow"><img src="https://camo.githubusercontent.com/7007eddce0c2e4c65925de9e08d2764b896d9f180041d0565f9c3417cdea1a8a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f547769747465722d466f6c6c6f775f404a6f73685f58542d626c75653f6c6f676f3d74776974746572267374796c653d706c6173746963" alt="推特" data-canonical-src="https://img.shields.io/badge/Twitter-Follow_@Josh_XT-blue?logo=twitter&amp;style=plastic" style="max-width: 100%;"></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们一直在寻找改进 AGiXT 并使其对我们的用户更有用的方法。</font><font style="vertical-align: inherit;">您的支持将帮助我们继续开发和增强该应用程序。</font><font style="vertical-align: inherit;">感谢您考虑支持我们！</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-our-team-" class="anchor" aria-hidden="true" tabindex="-1" href="#our-team-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的团队🧑&zwj;💻</font></font></h2>
+<h3 tabindex="-1" dir="auto"><a id="user-content-josh-josh-xt" class="anchor" aria-hidden="true" tabindex="-1" href="#josh-josh-xt"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">乔什（@Josh-XT）</font></font></h3>
+<ul dir="auto">
+<li><a href="https://github.com/Josh-XT"><img src="https://camo.githubusercontent.com/628848253377f8767efd954f1929e55271d35dde8106d96907ff8f5b5cd3f55e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d466f6c6c6f775f404a6f73682d2d58542d77686974653f6c6f676f3d676974687562267374796c653d706c6173746963" alt="GitHub" data-canonical-src="https://img.shields.io/badge/GitHub-Follow_@Josh--XT-white?logo=github&amp;style=plastic" style="max-width: 100%;"></a></li>
+<li><a href="https://twitter.com/Josh_XT" rel="nofollow"><img src="https://camo.githubusercontent.com/b94c2a9501c52e01a121e19854ae55a567ab07a1b739b7938fb2b2e47210a226/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f547769747465722d466f6c6c6f775f404a6f73685f5f58542d626c75653f6c6f676f3d74776974746572267374796c653d706c6173746963" alt="推特" data-canonical-src="https://img.shields.io/badge/Twitter-Follow_@Josh__XT-blue?logo=twitter&amp;style=plastic" style="max-width: 100%;"></a></li>
+<li><a href="https://www.linkedin.com/in/joshxt/" rel="nofollow"><img src="https://camo.githubusercontent.com/5c2dfb39c5203271e28a4677ff13750afe3170c06b5f00680db45b3b8ce81cfb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c696e6b6564496e2d466f6c6c6f775f404a6f736858542d626c75653f6c6f676f3d6c696e6b6564696e267374796c653d706c6173746963" alt="领英" data-canonical-src="https://img.shields.io/badge/LinkedIn-Follow_@JoshXT-blue?logo=linkedin&amp;style=plastic" style="max-width: 100%;"></a></li>
+</ul>
+<h3 tabindex="-1" dir="auto"><a id="user-content-james-jamesonrgrieve" class="anchor" aria-hidden="true" tabindex="-1" href="#james-jamesonrgrieve"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">詹姆斯（@JamesonRGrieve）</font></font></h3>
+<ul dir="auto">
+<li><a href="https://github.com/JamesonRGrieve"><img src="https://camo.githubusercontent.com/58f79f09b4f197e7a426e68dd0924c032a6c7cb5d9ac27e10e929a9d4b277fbf/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d466f6c6c6f775f404a616d65736f6e524772696576652d77686974653f6c6f676f3d676974687562267374796c653d706c6173746963" alt="GitHub" data-canonical-src="https://img.shields.io/badge/GitHub-Follow_@JamesonRGrieve-white?logo=github&amp;style=plastic" style="max-width: 100%;"></a></li>
+<li><a href="https://twitter.com/JamesonRGrieve" rel="nofollow"><img src="https://camo.githubusercontent.com/a715430c0d97ef41143a3f818cbf3f1b0f677fc5eae4ebdc2e4a457d75028e94/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f547769747465722d466f6c6c6f775f404a616d65736f6e524772696576652d626c75653f6c6f676f3d74776974746572267374796c653d706c6173746963" alt="推特" data-canonical-src="https://img.shields.io/badge/Twitter-Follow_@JamesonRGrieve-blue?logo=twitter&amp;style=plastic" style="max-width: 100%;"></a></li>
+<li><a href="https://www.linkedin.com/in/jamesonrgrieve/" rel="nofollow"><img src="https://camo.githubusercontent.com/1c587b1da78df1ab40fd657551da53992201a504672103fbfe4fb4b576635811/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c696e6b6564496e2d466f6c6c6f775f404a616d65736f6e524772696576652d626c75653f6c6f676f3d6c696e6b6564696e267374796c653d706c6173746963" alt="领英" data-canonical-src="https://img.shields.io/badge/LinkedIn-Follow_@JamesonRGrieve-blue?logo=linkedin&amp;style=plastic" style="max-width: 100%;"></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-history" class="anchor" aria-hidden="true" tabindex="-1" href="#history"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">历史</font></font></h2>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/5a165926903b3762793842d6094c4520cae52ddc8a89d4f654e46af0c3cab16c/68747470733a2f2f6170692e737461722d686973746f72792e636f6d2f7376673f7265706f733d4a6f73682d58542f414769585426747970653d446174"><img src="https://camo.githubusercontent.com/5a165926903b3762793842d6094c4520cae52ddc8a89d4f654e46af0c3cab16c/68747470733a2f2f6170692e737461722d686973746f72792e636f6d2f7376673f7265706f733d4a6f73682d58542f414769585426747970653d446174" alt="明星历史图" data-canonical-src="https://api.star-history.com/svg?repos=Josh-XT/AGiXT&amp;type=Dat" style="max-width: 100%;"></a></p>
+</article></div>
